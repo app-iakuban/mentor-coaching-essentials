@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="/mentor-coaching-essentials/">
+<link rel="canonical" href="https://iakuban.com/mentor-coaching-essentials/">
+<!-- Consent Mode v2: по умолчанию всё denied, согласием управляет CookieHub (explicit opt-in) -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+ 'ad_storage':'denied',
+ 'ad_user_data':'denied',
+ 'ad_personalization':'denied',
+ 'analytics_storage':'denied',
+ 'wait_for_update':500
+});
+gtag('set','url_passthrough',true);
+gtag('set','ads_data_redaction',true);
+</script>
+<!-- CookieHub CMP (домен iakuban.com, код 57650153) — до всех остальных скриптов -->
+<script src="https://cdn.cookiehub.eu/c2/57650153.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+ var cpm = {};
+ window.cookiehub.load(cpm);
+});
+</script>
+<!-- Google Analytics (GA4) G-Y2D060K2Z4.
+ Внутренний режим (?internal=1, флаг в localStorage) счётчики не поднимает. -->
+<script>
+(function(){
+ var internal=false;
+ try{
+  var p=new URLSearchParams(location.search).get('internal');
+  if(p==='1')localStorage.setItem('iakuban_internal','1');
+  if(p==='0'||p==='false')localStorage.removeItem('iakuban_internal');
+  internal=localStorage.getItem('iakuban_internal')==='1';
+ }catch(e){}
+ if(internal){
+  document.addEventListener('DOMContentLoaded',function(){
+   var t=document.querySelectorAll('script[type="text/plain"][data-consent]');
+   for(var i=0;i<t.length;i++)t[i].parentNode.removeChild(t[i]);
+  });
+  return;
+ }
+ var s=document.createElement('script');
+ s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-Y2D060K2Z4';
+ document.head.appendChild(s);
+ gtag('js',new Date());
+ gtag('config','G-Y2D060K2Z4');
+})();
+</script>
+<!-- Yandex.Metrika 109783359 — разблокируется CookieHub'ом только при согласии на analytics;
+ вебвизор выключен -->
+<script type="text/plain" data-consent="analytics">
+ (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
+ for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+ (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ ym(109783359,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+</script>
+<title>Основы менторинга для коучей: аккредитация ICF, 10 ч</title>
+<meta name="description" content="Асинхронная программа для ментор-коучей. Аккредитована ICF как Continuing Coach Education: 10 контактных часов Core Competency. На русском.">
+<meta property="og:title" content="Основы менторинга для коучей: подготовка к роли ментора">
+<meta property="og:description" content="10 часов в записи, разбор кейсов и итоговый тест. Программа аккредитована ICF как Continuing Coach Education.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iakuban.com/mentor-coaching-essentials/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://iakuban.com/mentor-coaching-essentials/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://iakuban.com/mentor-coaching-essentials/assets/og.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Mentor Coaching Essentials (Основы менторинга для коучей)",
+  "description": "Асинхронная программа для ментор-коучей: документы ICF, этика, соглашения о менторинге, формирующая оценка. 10 контактных часов Core Competency, аккредитация ICF как Continuing Coach Education.",
+  "url": "https://iakuban.com/mentor-coaching-essentials/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "@id": "https://iakuban.com/#organization",
+    "name": "Iakuban Coaching Academy",
+    "alternateName": [
+      "Академия коучинга Алексея Якубана",
+      "Академия Алексея Якубана",
+      "Академия Якубана",
+      "IAKUBAN COACHING ACADEMY S.L."
+    ],
+    "url": "https://iakuban.com",
+    "sameAs": [
+      "https://www.youtube.com/@iakuban",
+      "https://t.me/iakuban",
+      "https://yandex.ru/maps/org/86349660849/"
+    ],
+    "founder": {
+      "@type": "Person",
+      "@id": "https://iakuban.com/#person",
+      "name": "Алексей Якубан",
+      "alternateName": "Aleksei Iakuban"
+    }
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Тариф «Ментор»",
+      "price": "190",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://iakuban.com/mentor-coaching-essentials/"
+    },
+    {
+      "@type": "Offer",
+      "name": "Тариф «Ментор + сессия»",
+      "price": "350",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://iakuban.com/mentor-coaching-essentials/"
+    }
+  ],
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Online",
+    "courseWorkload": "PT10H",
+    "startDate": "2026-10-01",
+    "instructor": {
+      "@type": "Person",
+      "@id": "https://iakuban.com/#person",
+      "name": "Алексей Якубан",
+      "alternateName": "Aleksei Iakuban",
+      "jobTitle": "Коуч PCC ICF, основатель Iakuban Coaching Academy"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {"@type":"Question","name":"Даёт ли программа MCS?","acceptedAnswer":{"@type":"Answer","text":"Нет. MCS — это специализация, которую присваивает ICF по вашей заявке. Программа закрывает образовательное требование пути Credit for Prior Learning: не менее 10 часов обучения. Опыт менторинга минимум пяти человек за три года и прохождение ICF evaluation training вы собираете отдельно, заявку подаёте сами."}},
+ {"@type":"Question","name":"Засчитаются ли эти 10 часов при продлении квалификации PCC?","acceptedAnswer":{"@type":"Answer","text":"Да. Все 10 часов программы отнесены к категории Core Competency и засчитываются как непрерывное образование при продлении квалификации ICF."}},
+ {"@type":"Question","name":"Нужна ли квалификация ACC или PCC, чтобы прийти на программу?","acceptedAnswer":{"@type":"Answer","text":"Нет. Формальных пререквизитов нет: квалификация ICF и минимальный стаж не требуются. Программа рассчитана на практикующих коучей, и материал предполагает, что вы уже работаете с клиентами."}},
+ {"@type":"Question","name":"Сколько времени будет доступ к материалам?","acceptedAnswer":{"@type":"Answer","text":"Видео и платформа — 12 месяцев с даты покупки. Сертификат и скачиваемые чек-листы (PDF) остаются у вас бессрочно."}},
+ {"@type":"Question","name":"Будет ли версия на английском?","acceptedAnswer":{"@type":"Answer","text":"Да, английская версия выйдет после запуска русской. Точных сроков пока нет."}},
+ {"@type":"Question","name":"Есть ли живые встречи, вебинары, групповые сессии?","acceptedAnswer":{"@type":"Answer","text":"Нет. Программа полностью асинхронная: все 10 часов — материалы в записи. Синхронных часов в программе нет."}},
+ {"@type":"Question","name":"Что будет, если я не сдам тест?","acceptedAnswer":{"@type":"Answer","text":"Повторные попытки разрешены. Тест состоит из 20 вопросов с множественным выбором, проходной балл — 80%, то есть 16 правильных ответов из 20. Проверка автоматическая, результат видно сразу."}},
+ {"@type":"Question","name":"Выдаётся ли сертификат?","acceptedAnswer":{"@type":"Answer","text":"Да. Для его получения нужно пройти все десять уроков, проработать кейсы и сдать итоговый тест на 80% и выше. В сертификате указаны 10 часов Continuing Coach Education категории Core Competency."}},
+ {"@type":"Question","name":"Чем менторинг отличается от супервизии?","acceptedAnswer":{"@type":"Answer","text":"Менторинг — обратная связь о навыках относительно компетенций ICF. Супервизия — работа с самим коучем и его реакциями в практике. Разграничению посвящён урок 3."}},
+ {"@type":"Question","name":"Подходит ли программа преподавателям программ коуч-образования?","acceptedAnswer":{"@type":"Answer","text":"Да, это одна из целевых аудиторий. С 1 января 2027 года менторинг внутри аккредитованных ICF программ уровня Level 1 и Level 2 проводят только менторы с MCS, поэтому faculty программ проходит тот же путь, что и частные менторы."}},
+ {"@type":"Question","name":"В чём разница между тарифами?","acceptedAnswer":{"@type":"Answer","text":"«Ментор» (190 €) даёт все 10 уроков, сертификат, доступ в закрытый чат менторов, доступ в общий чат выпускников академии и место в базе выпускников. «Ментор + сессия» (350 €) добавляет к этому индивидуальную часовую ориентирующую сессию с ментором уровня PCC ICF — разбор вашей ситуации и вопросов о движении в профессии."}}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {"@type":"ListItem","position":1,"name":"Iakuban Coaching Academy","item":"https://iakuban.com/"},
+  {"@type":"ListItem","position":2,"name":"Основы менторинга для коучей","item":"https://iakuban.com/mentor-coaching-essentials/"}
+ ]
+}
+</script>
+<style>
+ :root{
+ --ink:#EDEDED; --ink-soft:#B8B8BC; --ink-dim:#8E8E93;
+ --dark:#141416; --dark-2:#1C1C1F;
+ --grad:linear-gradient(118deg,#5C95FF -20%,#3D3DF0 45%,#27009A 120%);
+ --accent:#3D3DF0;
+ --paper:#F7F7F8;
+ --headline:'Zalando Sans Expanded',Arial,sans-serif;
+ --body:'Poppins',Arial,sans-serif;
+ }
+ *{margin:0;padding:0;box-sizing:border-box}
+ html{scroll-behavior:smooth}
+ @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+ .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+ clip:rect(0,0,0,0);white-space:nowrap;border:0}
+ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #5C7CFF;outline-offset:3px;border-radius:4px}
+ body{font-family:var(--body);background:var(--paper);color:#212121;-webkit-font-smoothing:antialiased}
+ .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+ section{position:relative}
+ img{max-width:100%}
+ .sec-title{font-family:var(--headline);font-weight:500;font-size:38px;line-height:1.2;letter-spacing:-.01em}
+ .sec-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500;
+ letter-spacing:.08em;text-transform:uppercase;color:#3D3DF0;margin-bottom:18px}
+ .sec-eyebrow::before{content:'';width:26px;height:2px;background:var(--grad);border-radius:2px}
+ .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--body);
+ background:var(--grad);color:#fff;text-decoration:none;border:none;cursor:pointer;
+ border-radius:10px;transition:filter .2s, transform .15s}
+ .btn:hover{filter:brightness(1.12)}
+ .btn:active{transform:translateY(1px)}
+ .btn-sm{font-size:14px;font-weight:500;padding:10px 22px}
+ .btn-lg{font-size:17px;font-weight:500;padding:19px 44px;border-radius:12px;
+ box-shadow:0 12px 34px rgba(61,61,240,.38)}
+
+ /* ─── HERO ─── */
+ .hero{background:radial-gradient(1200px 700px at 78% 10%,#232327 0%,var(--dark) 55%);
+ overflow:hidden;color:var(--ink)}
+ .rings{position:absolute;border-radius:50%;border:1.5px solid rgba(255,255,255,.055);pointer-events:none}
+ .r1{width:920px;height:920px;left:-320px;top:-180px}
+ .r2{width:680px;height:680px;left:-200px;top:-60px}
+ .r3{width:460px;height:460px;left:-90px;top:50px}
+ .r4{width:1100px;height:1100px;right:-420px;bottom:-560px;border-color:rgba(255,255,255,.045)}
+ .r5{width:780px;height:780px;right:-260px;bottom:-400px;border-color:rgba(255,255,255,.05)}
+ .hero-glow{position:absolute;width:640px;height:640px;right:6%;top:-18%;border-radius:50%;
+ background:radial-gradient(closest-side,rgba(61,61,240,.28),transparent 70%);pointer-events:none}
+ .hero-in{position:relative;max-width:1200px;margin:0 auto;padding:170px 20px 130px;
+ display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+ .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;font-weight:500;
+ letter-spacing:.08em;text-transform:uppercase;color:#9DB4FF;margin-bottom:26px}
+ .eyebrow::before{content:'';width:26px;height:2px;background:var(--grad);border-radius:2px}
+ h1{font-family:var(--headline);font-weight:500;font-size:clamp(36px,3.6vw,50px);line-height:1.14;color:#fff;
+ letter-spacing:-.01em;margin-bottom:10px}
+ .h1-sub{font-family:var(--headline);font-weight:500;font-size:19px;color:#9DB4FF;margin-bottom:26px}
+ .sub{font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:520px;margin-bottom:26px}
+ .sub b{color:#fff;font-weight:500}
+ .hero-list{list-style:none;margin-bottom:36px;display:flex;flex-direction:column;gap:11px;max-width:520px}
+ .hero-list li{position:relative;padding-left:26px;font-size:15.5px;line-height:1.55;color:var(--ink-soft)}
+ .hero-list li::before{content:'';position:absolute;left:0;top:7px;width:9px;height:9px;border-radius:50%;background:var(--grad)}
+ .hero-list li b{color:#fff;font-weight:500}
+ .cta-note{font-size:15px;line-height:1.5;color:var(--ink-soft);margin-top:18px}
+ .cta-note b{color:#fff;font-weight:500}
+ .hero-accr{display:inline-flex;align-items:center;gap:12px;margin-top:26px;background:rgba(255,255,255,.05);
+ border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:10px 16px}
+ .hero-accr img{width:60px;height:60px;object-fit:contain;background:#fff;border-radius:10px;padding:5px}
+ .hero-accr span{font-size:14px;line-height:1.45;color:var(--ink-soft)}
+ .hero-accr b{color:#fff}
+ .photo-wrap{position:relative;justify-self:end}
+ .photo-clip{overflow:hidden;border-radius:24px;box-shadow:0 40px 90px rgba(0,0,0,.55)}
+ .photo{width:400px;height:480px;object-fit:cover;object-position:50% 30%;display:block;filter:brightness(1.16)}
+ .badge{position:absolute;left:-24px;bottom:26px;display:flex;flex-direction:column;gap:3px;
+ padding:15px 20px;border-radius:14px;background:rgba(22,22,26,.55);
+ backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+ border:1px solid rgba(255,255,255,.16)}
+ .badge .name{font-size:16px;font-weight:600;color:#fff}
+ .badge .role{font-size:12.5px;color:var(--ink-soft)}
+
+ /* ─── FACTS ─── */
+ .facts{position:relative;max-width:1160px;margin:-70px auto 0;padding:0 20px;z-index:3}
+ .facts-card{background:#fff;border-radius:24px;box-shadow:0 30px 70px rgba(20,20,30,.14);
+ display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:38px 12px}
+ .fact{text-align:center;padding:0 22px;position:relative}
+ .fact + .fact::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:1px;background:#ECECEF}
+ .fact .big{font-family:var(--headline);font-weight:500;font-size:25px;
+ background:linear-gradient(100deg,#3D3DF0,#27009A);-webkit-background-clip:text;
+ background-clip:text;color:transparent;margin-bottom:10px}
+ .fact .small{font-size:14.5px;line-height:1.45;color:#6B6B70}
+
+ /* ─── КОМУ ─── */
+ .whom{padding:110px 0 96px}
+ .whom-head{max-width:820px;margin-bottom:52px}
+ .whom-sub{font-size:16.5px;line-height:1.6;color:#5A5A5F;margin-top:16px;max-width:760px}
+ .aud-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+ .aud-grid .aud-wide{grid-column:1 / -1}
+ .aud{background:#fff;border:1px solid #ECECEF;border-radius:20px;padding:26px 30px;display:flex;gap:18px;align-items:flex-start}
+ .aud .dot{flex:0 0 auto;width:38px;height:38px;border-radius:11px;background:var(--grad);
+ display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--headline);font-weight:600;font-size:15px}
+ .aud h3{font-family:var(--headline);font-weight:500;font-size:17.5px;margin-bottom:6px}
+ .aud p{font-size:14.5px;line-height:1.58;color:#5A5A5F}
+ .aud p b{color:#212121;font-weight:600}
+ .whom-note{margin-top:26px;font-size:15px;line-height:1.6;color:#5A5A5F}
+
+ /* ─── MCS 2027 ─── */
+ .mcs{background:linear-gradient(180deg,#EEF1FD 0%,#F7F7F8 100%);padding:100px 0}
+ .mcs .sec-title{max-width:820px}
+ .quote{background:#fff;border:1.5px solid rgba(61,61,240,.30);border-left:5px solid var(--accent);
+ border-radius:16px;padding:28px 32px;margin:36px 0 30px}
+ .quote p{font-size:16.5px;line-height:1.6;color:#212121}
+ .quote p.tr{font-style:italic;color:#5A5A5F;margin-top:10px;font-size:15.5px}
+ .quote .src{display:block;margin-top:14px;font-size:13px;color:#8E8E93}
+ .mcs-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+ .mcs-card{background:#fff;border:1px solid #E6E7EE;border-radius:20px;padding:26px 30px}
+ .mcs-card h3{font-family:var(--headline);font-weight:500;font-size:18px;margin-bottom:10px}
+ .mcs-card p{font-size:15px;line-height:1.6;color:#4A4A4F}
+ .mcs-card p b{color:#212121;font-weight:600}
+ .paths{margin-top:36px;background:#fff;border:1px solid #E6E7EE;border-radius:20px;overflow:hidden}
+ table.paths-table{width:100%;border-collapse:collapse}
+ table.paths-table th,table.paths-table td{padding:18px 26px;text-align:left;font-size:15px;line-height:1.55}
+ table.paths-table thead th{background:#F0F1FA;font-family:var(--headline);font-weight:500;font-size:13.5px;
+ letter-spacing:.03em;text-transform:uppercase;color:#3D3DF0}
+ table.paths-table tbody tr+tr td{border-top:1px solid #ECECEF}
+ table.paths-table td b{color:#212121}
+ table.paths-table tr.hl td{background:#F3F5FF}
+ .mcs-note{margin-top:22px;background:#fff;border:1px solid #E6E7EE;border-radius:16px;padding:22px 28px;
+ font-size:15px;line-height:1.6;color:#4A4A4F}
+ .mcs-note b{color:#212121}
+ .mcs-note a{color:#3D3DF0}
+ .mcs-fee{margin-top:18px;font-size:14px;line-height:1.6;color:#6B6B70}
+
+ /* ─── ЧЕМУ НАУЧИТЕСЬ ─── */
+ .learn{padding:110px 0 90px}
+ .learn-head{max-width:780px;margin-bottom:44px}
+ .learn-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px}
+ .learn-grid li{position:relative;padding-left:30px;font-size:15.5px;line-height:1.58;color:#3A3A3F;list-style:none}
+ .learn-grid li::before{content:'✓';position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;
+ background:var(--grad);color:#fff;font-size:12px;line-height:20px;text-align:center;font-weight:700}
+
+ /* ─── ПРОГРАММА (аккордеон) ─── */
+ .program{padding:110px 0 90px}
+ .program-head{max-width:820px;margin-bottom:44px}
+ .program-total{display:inline-block;margin-top:14px;font-size:14.5px;font-weight:600;color:#3D3DF0;
+ background:#EEF0FE;border-radius:8px;padding:8px 16px}
+ .lessons{display:flex;flex-direction:column;gap:12px}
+ .lessons details{background:#fff;border:1px solid #ECECEF;border-radius:16px;padding:0 26px}
+ .lessons summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:18px;padding:20px 0}
+ .lessons summary::-webkit-details-marker{display:none}
+ .l-num{flex:0 0 auto;font-family:var(--headline);font-weight:600;font-size:14px;color:#fff;
+ background:var(--grad);width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center}
+ .l-title{flex:1;font-size:15.5px;font-weight:500;color:#212121}
+ .l-title .en{display:block;font-size:12.5px;font-weight:400;color:#8E8E93;margin-top:2px}
+ .l-meta{flex:0 0 auto;display:flex;gap:8px;align-items:center}
+ .l-hours{font-size:12.5px;font-weight:600;color:#3D3DF0;background:#EEF0FE;border-radius:999px;padding:4px 11px;white-space:nowrap}
+ .l-fmt{font-size:12px;color:#8E8E93;white-space:nowrap;display:none}
+ .lessons summary::after{content:'+';font-family:var(--headline);font-size:20px;color:#3D3DF0;transition:transform .2s;flex:0 0 auto}
+ .lessons details[open] summary::after{transform:rotate(45deg)}
+ .lessons details p{font-size:14.5px;line-height:1.62;color:#4A4A4F;padding:0 0 22px 48px;max-width:760px}
+
+ /* ─── КАК ПРОХОДИТ ─── */
+ .how{background:linear-gradient(180deg,#F7F7F8 0%,#EEF1FD 100%);padding:100px 0}
+ .how-head{max-width:780px;margin-bottom:44px}
+ .how-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+ .how-card{background:#fff;border:1px solid #ECECEF;border-radius:18px;padding:26px 24px}
+ .how-card h3{font-family:var(--headline);font-weight:500;font-size:16.5px;margin-bottom:8px}
+ .how-card p{font-size:14.5px;line-height:1.58;color:#5A5A5F}
+
+ /* ─── АККРЕДИТАЦИЯ ─── */
+ .accr{background:var(--dark);padding:100px 0;color:var(--ink)}
+ .accr .sec-eyebrow{color:#9DB4FF}
+ .accr .sec-title{color:#fff}
+ .accr-grid{display:grid;grid-template-columns:220px 1fr;gap:52px;align-items:center;margin-top:8px}
+ .accr-mark{background:#fff;border-radius:20px;padding:24px;display:flex;align-items:center;justify-content:center}
+ .accr-mark img{width:100%;height:auto;display:block}
+ .accr-body p{font-size:16px;line-height:1.62;color:var(--ink-soft);margin-top:14px}
+ .accr-body p b{color:#fff;font-weight:500}
+ .accr-body ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+ .accr-body li{position:relative;padding-left:24px;font-size:15px;line-height:1.55;color:var(--ink-soft)}
+ .accr-body li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--grad)}
+ .accr-body li b{color:#fff}
+
+ /* ─── АВТОР ─── */
+ .team{padding:100px 0}
+ .team-lead{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center;
+ background:#fff;border:1px solid #ECECEF;border-radius:24px;padding:40px}
+ .team-lead img{width:100%;height:320px;object-fit:cover;object-position:50% 30%;border-radius:16px;filter:brightness(1.05)}
+ .team-lead h3{font-family:var(--headline);font-weight:500;font-size:24px;margin-bottom:6px}
+ .team-lead .role{font-size:14.5px;color:#3D3DF0;margin-bottom:16px}
+ .team-lead p{font-size:15.5px;line-height:1.62;color:#4A4A4F;max-width:580px}
+ .team-lead p b{color:#212121;font-weight:600}
+ .team-org{margin-top:24px;font-size:14.5px;line-height:1.6;color:#4A4A4F}
+ .team-org b{color:#212121}
+ .team-org ul{margin-top:8px;list-style:none;padding-left:0}
+ .team-org li{padding-left:18px;position:relative;margin-top:4px}
+ .team-org li::before{content:'—';position:absolute;left:0;color:#8E8E93}
+
+ /* ─── ЦЕНА ─── */
+ .pricing{background:var(--dark);padding:100px 0;color:var(--ink);overflow:hidden}
+ .pricing .sec-eyebrow{color:#9DB4FF}
+ .pricing .sec-title{color:#fff}
+ .pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:48px;align-items:stretch}
+ .price-card{background:linear-gradient(160deg,#26264F 0%,#1C1C1F 65%);border:1px solid rgba(92,124,255,.45);
+ border-radius:24px;padding:42px 40px 38px;display:flex;flex-direction:column}
+ .price-card h3{font-family:var(--headline);font-weight:500;font-size:23px;color:#fff}
+ .price-card .price{font-family:var(--headline);font-size:48px;font-weight:500;color:#fff;margin-top:16px}
+ .price-card .price small{font-size:16px;color:var(--ink-soft);font-family:var(--body);font-weight:400}
+ .price-card ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin:24px 0 22px}
+ .price-card li{position:relative;padding-left:26px;font-size:14.5px;line-height:1.5;color:var(--ink-soft)}
+ .price-card li::before{content:'';position:absolute;left:0;top:6px;width:9px;height:9px;border-radius:50%;background:var(--grad)}
+ .price-card li b{color:#fff;font-weight:500}
+ .price-card .btn{margin-top:auto}
+ .price-card.hl{background:linear-gradient(135deg,#5C95FF -15%,#3D3DF0 50%,#27009A 135%);border:none;
+ position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(61,61,240,.35)}
+ .price-card.hl::before,.price-card.hl::after{content:'';position:absolute;border-radius:50%;
+ border:1.5px solid rgba(255,255,255,.22);pointer-events:none}
+ .price-card.hl::before{width:300px;height:300px;right:-110px;top:-140px}
+ .price-card.hl::after{width:200px;height:200px;right:-30px;top:-60px;border-color:rgba(255,255,255,.14)}
+ .price-card.hl .tag{display:inline-flex;align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:.06em;
+ text-transform:uppercase;color:#fff;background:rgba(255,255,255,.18);border-radius:999px;padding:6px 14px;margin-bottom:14px}
+ .price-card.hl h3,.price-card.hl .price{color:#fff}
+ .price-card.hl .price small{color:rgba(255,255,255,.82)}
+ .price-card.hl li{color:rgba(255,255,255,.9)}
+ .price-card.hl li::before{background:#fff}
+ .price-card.hl li b{color:#fff}
+ .price-card.hl .plus{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.7);margin:20px 0 8px}
+ .price-card.hl .btn-white{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;
+ background:#fff;border-radius:12px;color:#27009A;text-decoration:none;
+ font-size:15.5px;font-weight:600;padding:17px 34px;transition:filter .2s;
+ box-shadow:0 10px 26px rgba(0,0,0,.18);position:relative;z-index:1}
+ .price-card.hl .btn-white:hover{filter:brightness(.94)}
+ .pricing-common{margin-top:28px;background:var(--dark-2);border:1px solid rgba(255,255,255,.1);border-radius:16px;
+ padding:24px 28px;font-size:14.5px;line-height:1.6;color:var(--ink-soft)}
+ .pricing-common b{color:#fff}
+ .pricing-common a{color:#9DB4FF}
+ .pricing-contact{margin-top:20px;font-size:14.5px;color:var(--ink-soft)}
+ .pricing-contact a{color:#9DB4FF}
+
+ /* ─── FAQ ─── */
+ .faq{padding:110px 0 100px}
+ .faq-head{margin-bottom:40px;text-align:center}
+ .faq-list{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+ details{background:#fff;border:1px solid #ECECEF;border-radius:16px;padding:0 28px}
+ summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;
+ font-size:16.5px;font-weight:500;padding:22px 0}
+ summary::-webkit-details-marker{display:none}
+ summary::after{content:'+';font-family:var(--headline);font-size:22px;color:#3D3DF0;transition:transform .2s;flex:0 0 auto}
+ details[open] summary::after{transform:rotate(45deg)}
+ details p{font-size:15.5px;line-height:1.65;color:#4A4A4F;padding:0 0 24px;max-width:720px}
+ details p b{color:#212121;font-weight:600}
+ .faq-more{margin:36px auto 0;background:var(--dark);border-radius:18px;color:#fff;display:flex;
+ align-items:center;justify-content:space-between;gap:24px;padding:28px 34px;max-width:860px;flex-wrap:wrap}
+ .faq-more .t{font-size:17px;font-weight:500}
+ .faq-more .s{font-size:14px;color:var(--ink-soft);margin-top:4px}
+
+ /* ─── §7.3 ИНФОРМАЦИЯ О ПРОГРАММЕ ─── */
+ .compliance{padding:0 0 100px}
+ .compliance-in{background:#fff;border:1px solid #ECECEF;border-radius:20px;overflow:hidden}
+ .compliance h2{font-family:var(--headline);font-weight:500;font-size:20px;padding:26px 32px;border-bottom:1px solid #ECECEF}
+ table.ci{width:100%;border-collapse:collapse}
+ table.ci tr+tr td,table.ci tr+tr th{border-top:1px solid #ECECEF}
+ table.ci th{text-align:left;font-size:13.5px;font-weight:600;color:#6B6B70;padding:16px 32px;width:280px;vertical-align:top}
+ table.ci td{text-align:left;font-size:14.5px;line-height:1.55;color:#212121;padding:16px 32px 16px 0;vertical-align:top}
+
+ /* ─── FOOTER (как на главной) ─── */
+ footer{background:var(--dark);color:var(--ink-dim);padding:56px 0 54px;font-size:13.5px;line-height:1.8}
+ .foot-in{max-width:1200px;margin:0 auto;padding:0 20px}
+ .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px}
+ .foot-brand img{height:25px;width:auto;margin-bottom:16px}
+ .foot-brand p{max-width:280px}
+ .foot-col b{display:block;color:#EDEDED;font-weight:600;margin-bottom:10px;font-size:14px}
+ footer a{color:var(--ink-soft);text-decoration:none}
+ footer a:hover{color:#fff}
+ .foot-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:44px;padding-top:26px;
+ display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+
+ /* ─── MOBILE ─── */
+ @media (max-width:1020px){
+ .nav{display:none}
+ .header .btn{display:none}
+ .burger{display:block}
+ .hero-in{grid-template-columns:1fr;padding:140px 20px 110px}
+ .photo-wrap{justify-self:center}
+ .badge{left:8px}
+ .facts-card{grid-template-columns:1fr 1fr}
+ .fact{padding:14px 18px}
+ .fact + .fact::before{display:none}
+ .aud-grid,.mcs-grid,.learn-grid,.how-grid,.pricing-grid{grid-template-columns:1fr}
+ .accr-grid{grid-template-columns:1fr;text-align:center}
+ .accr-mark{max-width:180px;margin:0 auto}
+ .team-lead{grid-template-columns:1fr}
+ .team-lead img{height:320px}
+ table.ci th{width:auto}
+ }
+ @media (max-width:640px){
+ .photo{width:min(400px,84vw);height:auto;aspect-ratio:400/480}
+ .sec-title{font-size:29px}
+ .facts-card{grid-template-columns:1fr;gap:6px}
+ .price-card{padding:34px 26px 30px}
+ .foot-grid{grid-template-columns:1fr}
+ .lessons summary{flex-wrap:wrap}
+ .l-fmt{display:inline}
+ table.ci th,table.ci td{padding:14px 20px;display:block;width:auto}
+ table.ci th{padding-bottom:4px;border-top:1px solid #ECECEF}
+ table.ci tr:first-child th{border-top:none}
+ table.ci td{padding-top:0;padding-bottom:16px}
+ }
+</style>
+</head>
+<body>
+
+<!-- IH-HEADER:START -->
+<style>
+/* ════════════════════════════════════════════════════════════════════
+   СТАНДАРТНАЯ ШАПКА IAKUBAN — единый источник: shared/header/
+   Геометрия 1-в-1 с главной iakuban.com (MainSiteHeader.vue):
+   контейнер 1920/1440, паддинги clamp, лого clamp(18px,1.3vw,25px).
+   Все классы с префиксом ih- — не конфликтуют со стилями лендингов.
+   ⚠️ Правится ТОЛЬКО здесь, затем: python3 scripts/apply_header.py
+   ════════════════════════════════════════════════════════════════════ */
+/* Тёмная схема — пока шапка идёт поверх тёмного верха страницы.
+   Светлая (.ih-light) включается скриптом в момент, когда шапка доезжает
+   до светлого контента: граница задаётся в menu.json полем darkZone. */
+.ih-header{position:fixed;top:0;left:0;z-index:50;width:100%;
+  border-bottom:1px solid transparent;
+  background:rgba(33,33,33,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  font-family:'Poppins',system-ui,-apple-system,sans-serif;
+  transition:background-color .3s ease-out,border-color .3s ease-out}
+.ih-header.ih-light{border-bottom-color:rgba(196,207,223,.5);background:rgba(244,246,255,.95);
+  box-shadow:0 4px 24px rgba(40,52,91,.08)}
+.ih-header *{box-sizing:border-box}
+.ih-outer{margin:0 auto;width:100%;max-width:1920px;
+  padding:clamp(16px,1.56vw,30px) clamp(16px,8vw,240px)}
+.ih-inner{margin:0 auto;width:100%;max-width:1440px}
+.ih-row{display:flex;align-items:center;justify-content:space-between;gap:16px;
+  height:clamp(40px,2.5vw,48px);width:100%}
+.ih-logo{display:inline-block;flex:0 0 auto;line-height:0}
+.ih-logo img{display:block;height:clamp(18px,1.3vw,25px);width:auto;max-width:none}
+.ih-nav{display:flex;align-items:center;gap:clamp(12px,1.25vw,24px);height:clamp(40px,2.5vw,48px)}
+.ih-link{font-size:clamp(12px,0.83vw,16px);line-height:clamp(18px,1.25vw,24px);font-weight:400;
+  color:rgba(255,255,255,.9);text-decoration:none;transition:color .2s}
+.ih-link:hover{color:#fff}
+.ih-link[aria-current="page"]{color:#fff}
+
+/* ─── выпадающее меню «Академия» ─── */
+.ih-dd{position:relative}
+.ih-dd-btn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;
+  background:none;border:0;padding:0;font-family:inherit;
+  font-size:clamp(12px,0.83vw,16px);line-height:clamp(18px,1.25vw,24px);font-weight:400;
+  color:rgba(255,255,255,.9);transition:color .2s}
+.ih-dd-btn:hover{color:#fff}
+.ih-dd-btn svg{transition:transform .2s}
+.ih-dd.is-open .ih-dd-btn svg{transform:rotate(180deg)}
+/* padding-top = невидимый мостик через зазор: курсор доходит до меню, не теряя hover */
+.ih-dd-panel{position:absolute;top:100%;left:50%;transform:translateX(-50%);z-index:50;
+  padding-top:12px;display:none}
+.ih-dd.is-open .ih-dd-panel{display:block}
+.ih-dd-menu{min-width:220px;border-radius:12px;background:#fff;padding:8px;
+  box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.ih-dd-menu a{display:block;border-radius:8px;padding:10px 16px;
+  font-size:14px;line-height:1.3;color:#28345B;text-decoration:none;white-space:nowrap;
+  transition:background .15s}
+.ih-dd-menu a:hover{background:rgba(69,85,211,.05)}
+.ih-dd-hint{display:block;margin-top:2px;font-size:12px;line-height:1.25;color:#8A93AD;font-weight:400}
+.ih-dd-menu a[aria-current="page"]{background:rgba(69,85,211,.07);font-weight:500}
+
+/* ─── кнопки справа ─── */
+.ih-btn-outline,.ih-btn-solid,.ih-btn-cta{display:inline-flex;align-items:center;justify-content:center;
+  height:clamp(40px,2.5vw,48px);padding:0 clamp(14px,1.35vw,26px);
+  font-size:clamp(12px,0.83vw,16px);line-height:clamp(18px,1.25vw,24px);
+  text-decoration:none;white-space:nowrap;transition:background .2s,border-color .2s,box-shadow .2s}
+.ih-btn-outline{border:1px solid rgba(255,255,255,.8);border-radius:10px;color:#fff;font-weight:400}
+.ih-btn-outline:hover{background:rgba(255,255,255,.1)}
+.ih-btn-solid{border-radius:6px;background:rgba(255,255,255,.15);color:#fff;font-weight:500;
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.ih-btn-solid:hover{background:rgba(255,255,255,.22)}
+.ih-btn-cta{border-radius:10px;color:#fff;font-weight:500;
+  background:linear-gradient(118deg,#5C95FF 0%,#3D3DF0 55%,#27009A 100%)}
+.ih-btn-cta:hover{box-shadow:0 10px 28px rgba(61,61,240,.38)}
+
+/* ─── бургер и мобильное меню ─── */
+.ih-burger{display:none;cursor:pointer;background:none;border:0;color:#fff;
+  align-items:center;justify-content:center;border-radius:999px;padding:10px;flex:0 0 auto}
+.ih-burger svg{display:block}
+.ih-mobile{display:none;margin-top:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:12px}
+.ih-mobile.is-open{display:block}
+.ih-m-list{display:flex;flex-direction:column;gap:4px}
+.ih-m-btn{display:flex;width:100%;align-items:center;justify-content:space-between;cursor:pointer;
+  background:none;border:0;padding:12px 0;font-family:inherit;font-size:16px;font-weight:400;
+  color:rgba(255,255,255,.7);text-align:left;transition:color .2s}
+.ih-m-btn:hover{color:#fff}
+.ih-m-btn svg{transition:transform .2s}
+.ih-m-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.ih-m-sub{display:none;flex-direction:column;gap:4px;padding-left:16px}
+.ih-m-sub.is-open{display:flex}
+.ih-m-sub a{padding:8px 0;font-size:14px;color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s}
+.ih-m-sub a:hover,.ih-m-sub a[aria-current="page"]{color:#fff}
+.ih-m-sub .ih-dd-hint{color:rgba(255,255,255,.42)}
+/* только текстовые пункты: у кнопок .ih-btn-* свои цвета и паддинги */
+.ih-mobile>.ih-m-list>a:not([class*="ih-btn-"]){padding:12px 0;font-size:16px;color:rgba(255,255,255,.7);
+  text-decoration:none;transition:color .2s}
+.ih-mobile>.ih-m-list>a:not([class*="ih-btn-"]):hover{color:#fff}
+.ih-mobile .ih-btn-cta,.ih-mobile .ih-btn-solid,.ih-mobile .ih-btn-outline{margin-top:10px;width:100%}
+
+@media (max-width:767px){
+  .ih-nav{display:none}
+  .ih-burger{display:inline-flex}
+}
+@media (prefers-reduced-motion:reduce){
+  .ih-dd-btn svg,.ih-m-btn svg,.ih-link,.ih-btn-outline,.ih-btn-solid,.ih-btn-cta{transition:none}
+}
+.ih-header a:focus-visible,.ih-header button:focus-visible{outline:2px solid #9DB4FF;outline-offset:3px;border-radius:4px}
+
+/* ════════ СВЕТЛАЯ СХЕМА (шапка доехала до светлого контента) ════════
+   Логотип, пункты и кнопки инвертируются вместе с фоном — как на главной
+   iakuban.com и на betterup.com. Включается классом .ih-light из header.js. */
+.ih-light .ih-logo img{filter:brightness(0)}
+.ih-light .ih-link,.ih-light .ih-dd-btn{color:#4C587D}
+.ih-light .ih-link:hover,.ih-light .ih-dd-btn:hover,
+.ih-light .ih-link[aria-current="page"]{color:#28345B}
+.ih-light .ih-btn-outline{border-color:#C4CFDF;color:#28345B}
+.ih-light .ih-btn-outline:hover{border-color:#626C8E;background:transparent}
+.ih-light .ih-btn-solid{background:#1E1E24;color:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}
+.ih-light .ih-btn-solid:hover{background:#333340}
+.ih-light .ih-burger{color:#28345B}
+.ih-light .ih-mobile{border-top-color:rgba(196,207,223,.6)}
+.ih-light .ih-m-btn,.ih-light .ih-mobile>.ih-m-list>a:not([class*="ih-btn-"]){color:#4C587D}
+.ih-light .ih-m-btn:hover,.ih-light .ih-mobile>.ih-m-list>a:not([class*="ih-btn-"]):hover{color:#28345B}
+.ih-light .ih-m-sub a{color:#626C8E}
+.ih-light .ih-m-sub a:hover,.ih-light .ih-m-sub a[aria-current="page"]{color:#28345B}
+.ih-light .ih-m-sub .ih-dd-hint{color:#8A93AD}
+.ih-light a:focus-visible,.ih-light button:focus-visible{outline-color:#3D3DF0}
+@media (prefers-reduced-motion:reduce){.ih-header{transition:none}}
+</style>
+<header class="ih-header" data-dark-zone=".hero">
+  <div class="ih-outer">
+    <div class="ih-inner">
+      <div class="ih-row">
+        <a class="ih-logo" href="https://iakuban.com/" aria-label="IAKUBAN — на главную">
+          <img src="assets/iakuban-logo.svg" alt="IAKUBAN" width="182" height="25">
+        </a>
+        <nav class="ih-nav" aria-label="Основная навигация">
+          <div class="ih-dd">
+            <button class="ih-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Академия <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="ih-dd-panel">
+              <div class="ih-dd-menu" role="menu">
+          <a href="https://iakuban.com/coaching-from-zero/">Введение в коучинг</a>
+          <a href="https://iakuban.com/coaching-as-a-business/">Профессия коуч</a>
+          <a href="https://iakuban.com/icf-level-1/">Обучение коучингу<span class="ih-dd-hint">аккредитация ICF, Level 1</span></a>
+          <a href="https://iakuban.com/icf-level-2/">Продвинутая программа<span class="ih-dd-hint">аккредитация ICF, Level 2</span></a>
+          <a href="https://iakuban.com/mentor-coaching-essentials/" aria-current="page">Основы менторинга<span class="ih-dd-hint">аккредитация ICF, CCE</span></a>
+              </div>
+            </div>
+          </div>
+          <a class="ih-link" href="https://iakuban.com/about/">О нас</a>
+        <a class="ih-btn-cta" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB" target="_blank" rel="noopener">Записаться</a>
+        </nav>
+        <button class="ih-burger" type="button" aria-label="Меню" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></button>
+      </div>
+      <div class="ih-mobile">
+        <div class="ih-m-list">
+          <button class="ih-m-btn" type="button" aria-expanded="false">Академия <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="ih-m-sub">
+          <a href="https://iakuban.com/coaching-from-zero/">Введение в коучинг</a>
+          <a href="https://iakuban.com/coaching-as-a-business/">Профессия коуч</a>
+          <a href="https://iakuban.com/icf-level-1/">Обучение коучингу<span class="ih-dd-hint">аккредитация ICF, Level 1</span></a>
+          <a href="https://iakuban.com/icf-level-2/">Продвинутая программа<span class="ih-dd-hint">аккредитация ICF, Level 2</span></a>
+          <a href="https://iakuban.com/mentor-coaching-essentials/" aria-current="page">Основы менторинга<span class="ih-dd-hint">аккредитация ICF, CCE</span></a>
+          </div>
+          <a href="https://iakuban.com/about/">О нас</a>
+        <a class="ih-btn-cta" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB" target="_blank" rel="noopener">Записаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+/* Поведение стандартной шапки IAKUBAN. Единый источник: shared/header/header.js
+   Правится ТОЛЬКО здесь, затем: python3 scripts/apply_header.py */
+(function(){
+  var header = document.querySelector('.ih-header');
+  if(!header) return;
+  var dd = header.querySelector('.ih-dd');
+  var ddBtn = dd && dd.querySelector('.ih-dd-btn');
+  var burger = header.querySelector('.ih-burger');
+  var mobile = header.querySelector('.ih-mobile');
+  var mBtn = header.querySelector('.ih-m-btn');
+  var mSub = header.querySelector('.ih-m-sub');
+  var closeTimer = null;
+
+  // ─── цветовая схема под фоном страницы ───
+  // Пока шапка идёт поверх тёмного верха — тёмная; как только нижняя граница
+  // тёмной зоны уходит под шапку, включается светлая схема (класс ih-light).
+  var darkZone = header.getAttribute('data-dark-zone');
+  var zoneEl = null;
+
+  function syncScheme(){
+    if(!darkZone) return;
+    // ищем лениво: скрипт шапки выполняется раньше, чем секции ниже появятся в DOM
+    if(!zoneEl || !zoneEl.isConnected) zoneEl = document.querySelector(darkZone);
+    if(!zoneEl) return;
+    var headerHeight = header.getBoundingClientRect().height;
+    header.classList.toggle('ih-light', zoneEl.getBoundingClientRect().bottom <= headerHeight);
+  }
+
+  if(darkZone){
+    syncScheme();
+    document.addEventListener('DOMContentLoaded', syncScheme);
+    window.addEventListener('load', syncScheme);
+    window.addEventListener('scroll', syncScheme, {passive:true});
+    // высота тёмной зоны зависит от ширины окна — пересчитываем и на resize
+    window.addEventListener('resize', syncScheme, {passive:true});
+  }
+
+  function setDrop(open){
+    if(!dd) return;
+    clearTimeout(closeTimer);
+    dd.classList.toggle('is-open', open);
+    ddBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  if(dd){
+    // hover — с задержкой закрытия: курсор успевает дойти до меню, даже если срежет угол
+    dd.addEventListener('mouseenter', function(){ setDrop(true); });
+    dd.addEventListener('mouseleave', function(){
+      clearTimeout(closeTimer);
+      closeTimer = setTimeout(function(){ setDrop(false); }, 250);
+    });
+    // клик — для тач-устройств и клавиатуры
+    ddBtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      setDrop(!dd.classList.contains('is-open'));
+    });
+    document.addEventListener('click', function(e){
+      if(!dd.contains(e.target)) setDrop(false);
+    });
+  }
+
+  if(burger && mobile){
+    burger.addEventListener('click', function(e){
+      e.stopPropagation();
+      var open = !mobile.classList.contains('is-open');
+      mobile.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if(!open && mSub){ mSub.classList.remove('is-open'); mBtn.setAttribute('aria-expanded','false'); }
+    });
+  }
+
+  if(mBtn && mSub){
+    mBtn.addEventListener('click', function(){
+      var open = !mSub.classList.contains('is-open');
+      mSub.classList.toggle('is-open', open);
+      mBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  document.addEventListener('keydown', function(e){
+    if(e.key !== 'Escape') return;
+    setDrop(false);
+    if(mobile){ mobile.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); }
+    if(mSub){ mSub.classList.remove('is-open'); mBtn.setAttribute('aria-expanded','false'); }
+  });
+})();
+
+/* ─── Код визита для Telegram-CTA (сквозная атрибуция лидов) ───
+   Визиту присваивается код XXXXX, он дописывается в префилл всех ссылок
+   t.me/iakuban_team. По клику код вместе с UTM исходного захода уходит в
+   access-лог сервера (HEAD-запрос) и в GA4 (событие tg_lead_code).
+   Разбор и схема: Marketing/operations/2026-08-23_lead_attribution_szilviya.md
+
+   ⚠️ Подпись кода зависит от воронки. На страницах «Профессии коуч» префилл
+   несёт «Мой код: <КОД ИСТОЧНИКА>» и отвечает автоответчик (ветка
+   pk_onboarding): слово «Заявка» — его стоп-слово, при нём бот молчит и лид
+   уходит менеджеру. Таким ссылкам дописываем «Визит №», остальным (Level 1/2,
+   где как раз нужен менеджер) — привычную менеджерам «Заявку №».
+   Схема воронки ПК: Marketing/scenarios/pk_funnel_entry.md */
+(function(){
+  var TG = 'https://t.me/iakuban_team';
+
+  function get(k){ try { return sessionStorage.getItem(k); } catch(e){ return null; } }
+  function set(k,v){ try { sessionStorage.setItem(k,v); } catch(e){} }
+
+  // источник запоминаем на первой странице визита: дальше по сайту query теряется
+  if(/[?&](utm_|gclid|yclid|gad_|fbclid)/.test(location.search) && !get('ihLeadSrc')){
+    set('ihLeadSrc', location.search.slice(1));
+  }
+
+  var code = get('ihLeadCode');
+  if(!code){
+    // без похожих друг на друга символов: код диктуют голосом и переписывают руками
+    var abc = 'ABCEHKMPTXY2345679';
+    code = '';
+    for(var i=0;i<5;i++) code += abc.charAt(Math.floor(Math.random()*abc.length));
+    set('ihLeadCode', code);
+  }
+
+  function decorate(){
+    var links = document.querySelectorAll('a[href^="' + TG + '"]');
+    for(var i=0;i<links.length;i++){
+      try{
+        var u = new URL(links[i].href);
+        var t = u.searchParams.get('text');
+        if(!t || t.indexOf('Заявка №') !== -1 || t.indexOf('Визит №') !== -1) continue;
+        var label = t.indexOf('Мой код:') !== -1 ? 'Визит №' : 'Заявка №';
+        links[i].href = u.origin + u.pathname + '?text=' + encodeURIComponent(t + '\n\n' + label + code);
+      }catch(e){}
+    }
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', decorate);
+  else decorate();
+
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="https://t.me/"]');
+    if(!a) return;
+    var q = 'ihlc=' + code +
+      '&src=' + encodeURIComponent(get('ihLeadSrc') || '') +
+      '&ref=' + encodeURIComponent(document.referrer || '');
+    try { fetch(location.pathname + '?' + q, {method:'HEAD', keepalive:true, cache:'no-store'}); } catch(err){}
+    try { gtag('event','tg_lead_code',{'lead_code': code, 'transport_type':'beacon'}); } catch(err){}
+  }, true);
+})();
+</script>
+<!-- ИИ-помощник академии. Файл отдаётся Nuxt-слоем с корня домена, поэтому один
+     и тот же виджет работает и здесь, и на страницах платформы. Подключение
+     живёт в шапке, потому что она уже разъезжается по всем лендингам одной
+     командой и другого общего блока у статики нет. -->
+<script src="https://iakuban.com/chat-widget.js?v=20260908-1" defer></script>
+<!-- IH-HEADER:END -->
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+ <i class="rings r1"></i><i class="rings r2"></i><i class="rings r3"></i>
+ <i class="rings r4"></i><i class="rings r5"></i>
+ <i class="hero-glow"></i>
+ <div class="hero-in">
+ <div>
+ <p class="eyebrow">Аккредитация ICF · Continuing Coach Education</p>
+ <h1>Основы менторинга для коучей</h1>
+ <p class="h1-sub">Mentor Coaching Essentials</p>
+ <p class="sub"><b>Профессиональная роль ментор-коуча:</b> документы, этика, соглашения, формирующая оценка. 10 часов в записи, в своём темпе.</p>
+ <ul class="hero-list">
+ <li>Программа аккредитована ICF как Continuing Coach Education: <b>10 контактных часов, все — Core Competency</b>.</li>
+ <li>Полностью асинхронный формат: уроки открываются последовательно, живых встреч нет.</li>
+ <li>На русском; английская версия — после запуска русской. Старт — <b>1 октября 2026 года</b>.</li>
+ </ul>
+ <a class="btn btn-lg" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB" target="_blank" rel="noopener">Записаться на программу</a>
+ <p class="cta-note">Старт <b>1 октября 2026</b>. Тарифы — от <b>190 €</b>.</p>
+ <div class="hero-accr">
+ <img src="assets/icf_cce.png" alt="Знак ICF Continuing Coach Education" width="60" height="60">
+ <span><b>Программа аккредитована ICF</b><br>Continuing Coach Education, 10 часов</span>
+ </div>
+ </div>
+ <div class="photo-wrap">
+ <div class="photo-clip">
+ <img class="photo" src="assets/aleksei.jpg" alt="Алексей Якубан" width="400" height="480">
+ </div>
+ <div class="badge">
+ <span class="name">Алексей Якубан</span>
+ <span class="role">Коуч PCC ICF · ментор-коуч</span>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- FACTS -->
+<div class="facts">
+ <div class="facts-card">
+ <div class="fact"><div class="big">10 часов</div><div class="small">CCE ICF, все — Core Competency</div></div>
+ <div class="fact"><div class="big">Асинхронно</div><div class="small">без расписания и живых встреч</div></div>
+ <div class="fact"><div class="big">6 компетенций</div><div class="small">ментор-коуча ICF в 4 разделах модели</div></div>
+ <div class="fact"><div class="big">1 окт. 2026</div><div class="small">старт программы</div></div>
+ </div>
+</div>
+
+<!-- КОМУ -->
+<section class="whom">
+ <div class="wrap">
+ <div class="whom-head">
+ <p class="sec-eyebrow">Кому подходит</p>
+ <h2 class="sec-title">Программа для практикующих коучей, которые работают или собираются работать в роли ментора</h2>
+ </div>
+ <div class="aud-grid">
+ <div class="aud">
+ <span class="dot">1</span>
+ <div><h3>Ментор-коучи в практике</h3><p>Вы уже менторите, но роль собрана из опыта, а не из структуры. <b>Нужна рамка.</b></p></div>
+ </div>
+ <div class="aud">
+ <span class="dot">2</span>
+ <div><h3>Коучи ACC, PCC, MCC</h3><p>Планируют развивать <b>менторскую практику как отдельное направление</b>.</p></div>
+ </div>
+ <div class="aud">
+ <span class="dot">3</span>
+ <div><h3>Кандидаты на MCS</h3><p>Готовятся к Mentor Coach Specialization, в том числе по пути <b>Credit for Prior Learning</b>.</p></div>
+ </div>
+ <div class="aud">
+ <span class="dot">4</span>
+ <div><h3>Преподаватели и faculty</h3><p>Программ коуч-образования, которые дают студентам <b>развивающую обратную связь</b>.</p></div>
+ </div>
+ <div class="aud aud-wide">
+ <span class="dot">5</span>
+ <div><h3>Тем, кому нужно разграничивать роли</h3><p>Менторинг, супервизия, ассесмент, терапия, консультирование — <b>разные роли с разной ответственностью</b>.</p></div>
+ </div>
+ </div>
+ <p class="whom-note">Формальных пререквизитов нет: квалификация ICF и минимальный стаж для входа не требуются.</p>
+ </div>
+</section>
+
+<!-- ЧТО МЕНЯЕТСЯ С 2027 -->
+<section class="mcs">
+ <div class="wrap">
+ <p class="sec-eyebrow">Почему это важно сейчас</p>
+ <h2 class="sec-title">Что меняется с 1 января 2027 года</h2>
+ <p class="whom-sub">ICF ввёл отдельную специализацию для ментор-коучей — <b>Mentor Coach Specialization (MCS)</b>. С 1 января 2027 года она становится условием зачёта менторских часов кандидату на квалификацию ICF.</p>
+ <div class="quote">
+ <p>«Beginning January 1, 2027, all ICF credential candidates must work with a mentor coach who has earned the MCS designation».</p>
+ <p class="tr">«С 1 января 2027 года все кандидаты на квалификацию ICF обязаны работать с ментор-коучем, имеющим специализацию MCS».</p>
+ <span class="src">Источник: coachingfederation.org/blog/introducing-the-mentor-coach-specialization/</span>
+ </div>
+ <div class="mcs-grid">
+ <div class="mcs-card">
+ <h3>Для ментора, работающего частно</h3>
+ <p>Часы, которые вы даёте кандидату на квалификацию ICF, после этой даты засчитываются <b>только при наличии MCS</b>. Без специализации ваши менторские часы кандидату не помогут.</p>
+ </div>
+ <div class="mcs-card">
+ <h3>Для faculty аккредитованных программ</h3>
+ <p>Менторинг внутри аккредитованных ICF программ уровня Level 1 и Level 2 с той же даты проводят <b>только менторы с MCS</b>. Это касается и нашей академии, и любой другой.</p>
+ </div>
+ </div>
+ <div class="paths">
+ <table class="paths-table">
+ <thead><tr><th>Путь</th><th>Требования</th></tr></thead>
+ <tbody>
+ <tr><td><b>Standard</b></td><td>41+ час обучения, из них не менее 50% в живом (synchronous) формате</td></tr>
+ <tr class="hl"><td><b>Credit for Prior Learning (CPL)</b></td><td>не менее 10 часов обучения (в живом или асинхронном формате) + опыт менторинга не менее 5 человек за последние 3 года + прохождение ICF evaluation training</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="mcs-note">
+ <p><b>Где в этой схеме наша программа.</b> Она сделана под путь CPL и закрывает его образовательную часть: <b>10 часов обучения в асинхронном формате.</b></p>
+ <p style="margin-top:12px">Программа <b>не выдаёт MCS и не является заявкой на MCS.</b> Она даёт обучение — то есть один из трёх элементов пути Credit for Prior Learning. Опыт менторинга минимум пяти человек за три года и прохождение ICF evaluation training вы собираете отдельно, заявку подаёте в ICF сами.</p>
+ <p style="margin-top:12px">Один нюанс, который стоит проверить заранее: в описании пути CPL ICF уточняет, что засчитываются менти, которых вы менторили в рамках аккредитованной ICF программы уровня Level 1/2/3. Формулировку при подаче сверяйте с актуальным handbook: <a href="https://coachingfederation.org/wp-content/uploads/2026/04/icf-cs-mentor-specialization-handbook.pdf" target="_blank" rel="noopener">coachingfederation.org — handbook MCS</a>.</p>
+ </div>
+ <p class="mcs-fee">Стоимость самой заявки MCS в ICF (оплачивается напрямую ICF, в стоимость программы не входит): до марта 2027 — $50 для членов ICF и $125 для остальных; с апреля 2027 — $125 и $200 соответственно.</p>
+ </div>
+</section>
+
+<!-- ЧЕМУ НАУЧИТЕСЬ -->
+<section class="learn">
+ <div class="wrap">
+ <div class="learn-head">
+ <p class="sec-eyebrow">Результат</p>
+ <h2 class="sec-title">К концу программы вы сможете</h2>
+ </div>
+ <ul class="learn-grid">
+ <li>Объяснять, что такое менторинг в рамке ICF — как описанную роль, а не как обмен опытом, — и какое место он занимает в развитии профессии.</li>
+ <li>Отделять менторинг от коучинга, супервизии, ассесмента, терапии и бизнес-консультирования — и удерживать эту границу в работе.</li>
+ <li>Ориентироваться в документах ICF, которые ментору нужны ежедневно: Кодекс этики, Core Competencies 2025, Competency Glossary, PCC Markers.</li>
+ <li>Описывать шесть компетенций ментор-коуча ICF и логику модели, в которую они собраны.</li>
+ <li>Видеть этические риски менторинга заранее: двойные роли, конфиденциальность, хранение записей, границы с терапией и консультированием.</li>
+ <li>Заключать соглашение о менторинге — и на весь процесс, и на отдельную сессию — и управлять процессом по нему.</li>
+ <li>Проводить формирующую оценку и давать развивающую обратную связь без вердикта и без осуждения.</li>
+ <li>Различать фокус работы с менти, который идёт к ACC, и с менти, который идёт к PCC, — по Minimum Skills Requirements и PCC Markers.</li>
+ <li>Применять всё это к практическим кейсам, включая групповой менторинг и сложные ситуации в группе.</li>
+ </ul>
+ </div>
+</section>
+
+<!-- ПРОГРАММА -->
+<section class="program" id="program">
+ <div class="wrap">
+ <div class="program-head">
+ <p class="sec-eyebrow">Программа</p>
+ <h2 class="sec-title">10 уроков</h2>
+ <span class="program-total">Итого: 10.0 часов, все — Core Competency</span>
+ </div>
+ <div class="lessons">
+ <details>
+ <summary><span class="l-num">1</span><span class="l-title">Введение: зачем ментору отдельная подготовка<span class="en">Introduction to the Program and the Professional Role of the Mentor Coach</span></span><span class="l-meta"><span class="l-hours">0.5 ч</span><span class="l-fmt">Текст</span></span></summary>
+ <p>Место менторинга в развитии профессии. Почему роль ментора требует отдельной подготовки. Структура программы и её границы: что курс даёт, а что нет.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">2</span><span class="l-title">Документы ICF, которые нужны ментору<span class="en">ICF Documents Every Mentor Coach Needs</span></span><span class="l-meta"><span class="l-hours">1.5 ч</span><span class="l-fmt">Текст + самопроверка</span></span></summary>
+ <p>Кодекс этики ICF и его ценности, включая акценты на технологиях и ИИ, конфиденциальность и хранение записей. Core Competencies 2025, Competency Glossary. PCC Markers как язык наблюдаемого поведения, а не чек-лист для галочек.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">3</span><span class="l-title">Что такое менторинг и чем он не является<span class="en">What Mentor Coaching Is and What It Is Not</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">Текст + кейсы</span></span></summary>
+ <p>Определение менторинга. Отличия от супервизии, терапии, бизнес-консультирования и ассесмента. Типичные ошибки начинающих менторов.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">4</span><span class="l-title">Этические границы роли ментора<span class="en">Ethical Boundaries of the Mentor Coach Role</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">Текст + кейсы с разборами</span></span></summary>
+ <p>Кодекс этики применительно к менторингу. Двойные роли. Standard 3.7 — раскрытие смены роли. Конфиденциальность, хранение и уничтожение материалов. Граница с терапией и консультированием.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">5</span><span class="l-title">Компетенции ментор-коуча ICF<span class="en">ICF Mentor Coaching Competencies</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">3 видео по 20 минут</span></span></summary>
+ <p>Шесть компетенций ментор-коуча в четырёх разделах модели. Видео 1 — основания роли: этика и соглашения (компетенции 1–2). Видео 2 — управление процессом менторинга (3). Видео 3 — развитие клиента и групповой менторинг (4–6).</p>
+ </details>
+ <details>
+ <summary><span class="l-num">6</span><span class="l-title">Соглашение и управление процессом<span class="en">The Mentoring Agreement and Managing the Mentoring Process</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">Текст + разбор кейса</span></span></summary>
+ <p>Соглашение на весь процесс и на отдельную сессию. Параметры отношений. Цель менти и квалификация, к которой он идёт. Критерии успеха. Ответственность сторон.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">7</span><span class="l-title">Формирующая оценка и развитие навыков менти<span class="en">Formative Assessment and Developing the Mentee's Skills</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">Текст + кейсы</span></span></summary>
+ <p>Формирующая и итоговая оценка: в чём разница. Почему ментор не выносит вердикт «сдал / не сдал». Развивающая обратная связь без осуждения. Поддержка собственного стиля коуча.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">8</span><span class="l-title">Уровни ACC и PCC как ориентиры развития<span class="en">ACC and PCC Levels as Development Benchmarks</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">Текст + сравнительные кейсы</span></span></summary>
+ <p>ACC — базовые навыки, PCC — зрелое партнёрство. Minimum Skills Requirements и PCC Markers. Почему уровни это ориентир развития, а не шкала оценки в руках ментора.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">9</span><span class="l-title">Групповой менторинг и сложные ситуации<span class="en">Group Mentor Coaching and Challenging Situations</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">Текст + кейсы</span></span></summary>
+ <p>Групповой и индивидуальный формат. Безопасность и инклюзия в группе. Групповая динамика. Разбор сложных ситуаций.</p>
+ </details>
+ <details>
+ <summary><span class="l-num">10</span><span class="l-title">Итоговая интеграция и тест<span class="en">Final Integration and Testing</span></span><span class="l-meta"><span class="l-hours">1.0 ч</span><span class="l-fmt">Тест</span></span></summary>
+ <p>Сборка логики курса. Итоговый тест: 20 вопросов, проходной балл 80%.</p>
+ </details>
+ </div>
+ </div>
+</section>
+
+<!-- КАК ПРОХОДИТ -->
+<section class="how">
+ <div class="wrap">
+ <div class="how-head">
+ <p class="sec-eyebrow">Формат</p>
+ <h2 class="sec-title">Как проходит обучение</h2>
+ </div>
+ <div class="how-grid">
+ <div class="how-card"><h3>Асинхронно, без расписания</h3><p>Живых встреч и вебинаров нет. Вы проходите программу в своём темпе, когда вам удобно.</p></div>
+ <div class="how-card"><h3>Уроки открываются последовательно</h3><p>Следующий становится доступен после предыдущего.</p></div>
+ <div class="how-card"><h3>Основной формат — текст</h3><p>Плюс три видео по 20 минут в уроке о компетенциях ментор-коуча.</p></div>
+ <div class="how-card"><h3>Кейсы с разборами</h3><p>Этические ситуации, соглашения, сравнение уровней ACC и PCC, групповая динамика — на конкретных примерах с решениями.</p></div>
+ <div class="how-card"><h3>Самопроверка и итоговый тест</h3><p>20 вопросов с множественным выбором, проходной балл 80% (16 из 20), проверка автоматическая, повторные попытки разрешены.</p></div>
+ <div class="how-card"><h3>Сертификат</h3><p>Выдаётся после прохождения всех десяти уроков, работы с кейсами и сдачи теста на 80% и выше — 10 часов CCE категории Core Competency.</p></div>
+ </div>
+ </div>
+</section>
+
+<!-- АККРЕДИТАЦИЯ -->
+<section class="accr">
+ <div class="wrap">
+ <p class="sec-eyebrow">Документ</p>
+ <h2 class="sec-title">Mentor Coaching Essentials: аккредитация ICF, Continuing Coach Education</h2>
+ <div class="accr-grid">
+ <div class="accr-mark">
+ <img src="assets/icf_cce.png" alt="Знак ICF Continuing Coach Education (CCE)" width="220" height="220">
+ </div>
+ <div class="accr-body">
+ <p>Программа аккредитована ICF как <b>Continuing Coach Education (CCE)</b>, объём — 10.00 контактных часов, все часы отнесены к категории Core Competency. Сертификат аккредитации выдан 01.10.2026, действует по 31.10.2027.</p>
+ <ul>
+ <li><b>Продление квалификации ICF.</b> Часы Core Competency засчитываются как непрерывное образование при продлении вашей квалификации в ICF.</li>
+ <li><b>Образовательная часть пути Credit for Prior Learning</b> к специализации MCS: путь CPL требует не менее 10 часов обучения — программа их закрывает.</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- АВТОР -->
+<section class="team">
+ <div class="wrap">
+ <p class="sec-eyebrow">Автор и академия</p>
+ <h2 class="sec-title" style="margin-bottom:36px">Все десять уроков ведёт Алексей Якубан</h2>
+ <div class="team-lead">
+ <img src="assets/aleksei.jpg" alt="Алексей Якубан" width="300" height="320" loading="lazy">
+ <div>
+ <h3>Алексей Якубан</h3>
+ <p class="role">Коуч PCC ICF · ментор-коуч · асессор по маркерам PCC</p>
+ <p><b>Тренер аккредитованных ICF программ академии (Level 1 и Level 2).</b> Основатель и ведущий преподаватель Iakuban Coaching Academy. Менторит коучей, которые готовятся к квалификациям ICF. Автор и преподаватель всех десяти уроков программы.</p>
+ <div class="team-org">
+ <b>Iakuban Coaching Academy S.L.</b> — испанская компания с аккредитованными ICF программами подготовки коучей:
+ <ul>
+ <li><b>«Магия и наука коучинга»</b> (The Magic & Science of Coaching — Essence Professional Certification) — аккредитация ICF, Level 1, 75 часов.</li>
+ <li><b>«Путь Алхимика»</b> (The Alchemist's Path — Advanced Coach Certification) — аккредитация ICF, Level 2, 126 часов.</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ЦЕНА -->
+<section class="pricing" id="pricing">
+ <div class="wrap">
+ <p class="sec-eyebrow">Тарифы и запись</p>
+ <h2 class="sec-title">Выберите формат участия</h2>
+ <div class="pricing-grid">
+ <div class="price-card">
+ <h3>Ментор</h3>
+ <p class="price">190 € <small>за всю программу</small></p>
+ <ul>
+ <li>Все 10 уроков программы в записи, <b>10 контактных часов</b></li>
+ <li>Итоговый тест и <b>сертификат об аккредитации ICF</b> (CCE, 10 часов Core Competency)</li>
+ <li>Доступ в <b>закрытый чат менторов</b> — профессиональное сообщество коучей уровня PCC/MCC (Telegram)</li>
+ <li>Доступ в <b>общий чат выпускников академии</b> (не только менторский)</li>
+ <li>Место в базе выпускников академии на платформе iakuban.com</li>
+ </ul>
+ <a class="btn btn-lg" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%82%D0%B0%D1%80%D0%B8%D1%84%20%C2%AB%D0%9C%D0%B5%D0%BD%D1%82%D0%BE%D1%80%C2%BB%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB" target="_blank" rel="noopener">Выбрать «Ментор»</a>
+ </div>
+ <div class="price-card hl">
+ <span class="tag">Рекомендуем</span>
+ <h3>Ментор + сессия</h3>
+ <p class="price">350 € <small>за всю программу</small></p>
+ <p style="font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.9);margin-top:16px">Всё из тарифа «Ментор», плюс:</p>
+ <ul>
+ <li><b>Ориентирующая сессия с ментором</b> — индивидуальная часовая сессия с ментором уровня PCC ICF: разбор вопросов по движению в профессии ментор-коуча, куда двигаться дальше, ответы на любые вопросы участника</li>
+ </ul>
+ <a class="btn-white" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%82%D0%B0%D1%80%D0%B8%D1%84%20%C2%AB%D0%9C%D0%B5%D0%BD%D1%82%D0%BE%D1%80%20%2B%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8F%C2%BB%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB" target="_blank" rel="noopener">Выбрать «Ментор + сессия»</a>
+ </div>
+ </div>
+ <div class="pricing-common">
+ <b>Что общее для обоих тарифов:</b> доступ на платформе академии · три видео по 20 минут в уроке о компетенциях ментор-коуча · кейсы с разборами и вопросы для самопроверки · итоговый тест с автоматической проверкой и повторными попытками.<br><br>
+ <b>Язык:</b> на русском; английская версия — после запуска русской.<br>
+ <b>Срок доступа к материалам:</b> видео и платформа — 12 месяцев с даты покупки. Сертификат и скачиваемые чек-листы (PDF) — бессрочно.<br>
+ <b>Старт:</b> 1 октября 2026 года.
+ </div>
+ <p class="pricing-contact">Вопросы до оплаты — напишите нам: <a href="mailto:info@iakuban.com">info@iakuban.com</a>, <a href="tel:+34614206809">+34 614 206 809</a>.</p>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+ <div class="wrap">
+ <div class="faq-head">
+ <h2 class="sec-title">Частые вопросы</h2>
+ </div>
+ <div class="faq-list">
+ <details>
+ <summary>Даёт ли программа MCS?</summary>
+ <p>Нет. MCS — это специализация, которую присваивает ICF по вашей заявке. Программа закрывает образовательное требование пути Credit for Prior Learning: <b>не менее 10 часов обучения</b>. Опыт менторинга минимум пяти человек за три года и прохождение ICF evaluation training вы собираете отдельно, заявку подаёте сами.</p>
+ </details>
+ <details>
+ <summary>Засчитаются ли эти 10 часов при продлении квалификации PCC?</summary>
+ <p>Да. Все 10 часов программы отнесены к категории Core Competency и <b>засчитываются как непрерывное образование</b> при продлении квалификации ICF.</p>
+ </details>
+ <details>
+ <summary>Нужна ли квалификация ACC или PCC, чтобы прийти на программу?</summary>
+ <p>Нет. Формальных пререквизитов нет: квалификация ICF и минимальный стаж не требуются. Программа рассчитана на практикующих коучей, и материал предполагает, что вы уже работаете с клиентами.</p>
+ </details>
+ <details>
+ <summary>Сколько времени будет доступ к материалам?</summary>
+ <p>Видео и платформа — <b>12 месяцев</b> с даты покупки. Сертификат и скачиваемые чек-листы (PDF) остаются у вас бессрочно.</p>
+ </details>
+ <details>
+ <summary>Будет ли версия на английском?</summary>
+ <p>Да, английская версия выйдет после запуска русской. Точных сроков пока нет.</p>
+ </details>
+ <details>
+ <summary>Есть ли живые встречи, вебинары, групповые сессии?</summary>
+ <p>Нет. Программа полностью асинхронная: все 10 часов — материалы в записи. Синхронных часов в программе нет.</p>
+ </details>
+ <details>
+ <summary>Что будет, если я не сдам тест?</summary>
+ <p>Повторные попытки разрешены. Тест состоит из 20 вопросов с множественным выбором, проходной балл — <b>80%</b>, то есть 16 правильных ответов из 20. Проверка автоматическая, результат видно сразу.</p>
+ </details>
+ <details>
+ <summary>Выдаётся ли сертификат?</summary>
+ <p>Да. Для его получения нужно пройти все десять уроков, проработать кейсы и сдать итоговый тест на 80% и выше. В сертификате указаны <b>10 часов Continuing Coach Education</b> категории Core Competency.</p>
+ </details>
+ <details>
+ <summary>Чем менторинг отличается от супервизии?</summary>
+ <p>Менторинг — обратная связь о навыках относительно компетенций ICF. Супервизия — работа с самим коучем и его реакциями в практике. Разграничению посвящён урок 3.</p>
+ </details>
+ <details>
+ <summary>Подходит ли программа преподавателям программ коуч-образования?</summary>
+ <p>Да, это одна из целевых аудиторий. С 1 января 2027 года менторинг внутри аккредитованных ICF программ уровня Level 1 и Level 2 проводят только менторы с MCS, поэтому <b>faculty программ проходит тот же путь</b>, что и частные менторы.</p>
+ </details>
+ <details>
+ <summary>В чём разница между тарифами?</summary>
+ <p><b>«Ментор» (190 €)</b> даёт все 10 уроков, сертификат, доступ в закрытый чат менторов, доступ в общий чат выпускников академии и место в базе выпускников. <b>«Ментор + сессия» (350 €)</b> добавляет к этому индивидуальную часовую ориентирующую сессию с ментором уровня PCC ICF — разбор вашей ситуации и вопросов о движении в профессии.</p>
+ </details>
+ </div>
+ <div class="faq-more">
+ <div>
+ <div class="t">Остался вопрос?</div>
+ <div class="s">Напишите нам — ответим лично</div>
+ </div>
+ <a class="btn btn-sm" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A3%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B5%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB" target="_blank" rel="noopener">Написать в Telegram</a>
+ </div>
+ </div>
+</section>
+
+<!-- §7.3 ИНФОРМАЦИЯ О ПРОГРАММЕ -->
+<section class="compliance">
+ <div class="wrap">
+ <div class="compliance-in">
+ <h2>Информация о программе</h2>
+ <table class="ci">
+ <tr><th>Организация</th><td>Iakuban Coaching Academy S.L.</td></tr>
+ <tr><th>Название программы</th><td>Mentor Coaching Essentials · Основы менторинга для коучей</td></tr>
+ <tr><th>Аккредитация</th><td>Программа аккредитована ICF как Continuing Coach Education (CCE)</td></tr>
+ <tr><th>Контактные часы</th><td>10.00, все — категория Core Competency (0 часов Resource Development)</td></tr>
+ <tr><th>Период действия аккредитации</th><td>сертификат выдан 01.10.2026, действует по 31.10.2027</td></tr>
+ <tr><th>Старт программы</th><td>1 октября 2026 года</td></tr>
+ <tr><th>Формат обучения (delivery method)</th><td>полностью асинхронный, самостоятельный темп, собственная платформа академии; синхронных (живых) часов нет</td></tr>
+ <tr><th>Язык</th><td>на русском; английская версия — после запуска русской</td></tr>
+ <tr><th>Локация</th><td>онлайн</td></tr>
+ <tr><th>Целевая аудитория</th><td>практикующие ментор-коучи; коучи с квалификацией ACC, PCC, MCC, развивающие менторскую практику; коучи, готовящиеся к Mentor Coach Specialization, включая путь Credit for Prior Learning; faculty программ коуч-образования; специалисты, которым нужно разграничивать менторинг, супервизию, ассесмент, терапию и консультирование</td></tr>
+ <tr><th>Пререквизиты</th><td>формальных пререквизитов нет</td></tr>
+ <tr><th>Преподаватель</th><td>Aleksei Iakuban, PCC — все 10 уроков</td></tr>
+ <tr><th>Оценка</th><td>итоговый тест: 20 вопросов, проходной балл 80%, повторные попытки разрешены</td></tr>
+ <tr><th>Стоимость</th><td>190 € (тариф «Ментор») / 350 € (тариф «Ментор + сессия»)</td></tr>
+ <tr><th>Контакты</th><td><a href="mailto:info@iakuban.com" style="color:#3D3DF0">info@iakuban.com</a>, <a href="tel:+34614206809" style="color:#3D3DF0">+34 614 206 809</a></td></tr>
+ <tr><th>Адрес</th><td>Avda Pau Casals 4 A, Prats de Lluçanès, Barcelona 08513, Spain</td></tr>
+ <tr><th>Сайт</th><td>iakuban.com</td></tr>
+ </table>
+ </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="foot-in">
+ <div class="foot-grid">
+ <div class="foot-brand">
+ <img src="assets/iakuban-logo.svg" alt="IAKUBAN" width="182" height="25" loading="lazy">
+ <p>Академия коучинга и маркетплейс коучей, прошедших аккредитованное ICF обучение.</p>
+ </div>
+ <div class="foot-col">
+ <b>Академия</b>
+ <a href="https://iakuban.com/coaching-from-zero/">Бесплатное обучение</a><br>
+ <a href="https://iakuban.com/coaching-as-a-business/">Профессия коуч</a><br>
+ <a href="https://iakuban.com/icf-level-1/">Магия и наука коучинга: аккредитация ICF, Level 1</a><br>
+ <a href="https://iakuban.com/icf-level-2/">Путь Алхимика: аккредитация ICF, Level 2</a><br>
+ <a href="https://iakuban.com/mentor-coaching-essentials/" aria-current="page">Основы менторинга для коучей: аккредитация ICF, CCE</a>
+ </div>
+ <div class="foot-col">
+ <b>Платформа</b>
+ <a href="https://iakuban.com/coaches">Все коучи</a><br>
+ <a href="https://iakuban.com/tests/archetypes">Тест на архетип личности</a><br>
+ <a href="https://iakuban.com/tests/koleso-balansa">Колесо баланса онлайн</a><br>
+ <a href="https://iakuban.com/kouching-dlya-psihologov/">Психологу: коучинг к практике</a><br>
+ <a href="https://iakuban.com/reviews/level-1/">Отзывы выпускников</a><br>
+ <a href="https://iakuban.com/about/">О нас</a><br>
+ <a href="mailto:info@iakuban.com">info@iakuban.com</a><br>
+ <a href="tel:+34614206809">+34 614 206 809</a>
+ </div>
+ <div class="foot-col">
+ <b>Юридическая информация</b>
+ <a href="https://iakuban.com/legal/privacy-policy">Политика конфиденциальности</a><br>
+ <a href="https://iakuban.com/legal/offer-agreement">Договор оферты</a><br>
+ <a href="https://iakuban.com/legal/terms-of-use">Условия использования</a><br>
+ <a href="https://iakuban.com/legal/code-of-conduct">Кодекс поведения для коучей</a>
+ </div>
+ </div>
+ <div class="foot-bottom">
+ <span>Iakuban Coaching Academy S.L. · CIF B22895676 · EU VAT ESB22895676</span>
+ </div>
+ </div>
+</footer>
+
+</body>
+</html>
