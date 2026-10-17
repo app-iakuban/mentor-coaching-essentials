@@ -19,11 +19,33 @@ gtag('set','url_passthrough',true);
 gtag('set','ads_data_redaction',true);
 </script>
 <!-- CookieHub CMP (домен iakuban.com, код 57650153) — до всех остальных скриптов -->
-<script src="https://cdn.cookiehub.eu/c2/57650153.js"></script>
+<!-- С 10.10.2026 CookieHub грузится через наш домен: /cookiehub/ проксирует nginx landings к cdn.cookiehub.eu.
+ CDN CookieHub на Bunny, россиянам он иногда отдаёт узел Datacamp, который ТСПУ рвёт после 16 КБ:
+ баннера нет, GA4 и Метрика не стартуют. Не загрузился с нашего домена — запасной путь на CDN.
+ load() только через iakCookiehubStart: без CookieHub страница не падает (SEO/operations/2026-10-10_cookiehub_ru_delivery.md). -->
+<script src="/cookiehub/c2/57650153.js"></script>
+<script>
+(function(){
+ var CDN='https://cdn.cookiehub.eu',own=!!window.cookiehub,opts=null,done=false;
+ function fix(){
+  var h=window.__cookiehub,p=location.origin+'/cookiehub',k=['css','assets','dist','cdn'];
+  if(!own||!h)return;
+  for(var i=0;i<k.length;i++){if(typeof h[k[i]]==='string'&&h[k[i]].indexOf(CDN)===0)h[k[i]]=p+h[k[i]].slice(CDN.length);}
+ }
+ function go(){
+  var c=window.cookiehub;
+  if(done||!opts||!c||typeof c.load!=='function')return;
+  done=true;fix();
+  try{c.load(opts);}catch(e){}
+ }
+ window.iakCookiehubStart=function(o){opts=o||{};go();};
+ if(!own){var s=document.createElement('script');s.src=CDN+'/c2/57650153.js';s.onload=go;document.head.appendChild(s);}
+})();
+</script>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(event) {
  var cpm = {};
- window.cookiehub.load(cpm);
+ window.iakCookiehubStart(cpm);
 });
 </script>
 <!-- Google Analytics (GA4) G-Y2D060K2Z4.
@@ -129,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     "@type": "CourseInstance",
     "courseMode": "Online",
     "courseWorkload": "PT10H",
-    "startDate": "2026-10-01",
+    "startDate": "2026-11-01",
     "instructor": {
       "@type": "Person",
       "@id": "https://iakuban.com/#person",
@@ -809,10 +831,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <ul class="hero-list">
  <li>Программа аккредитована ICF как Continuing Coach Education: <b>10 контактных часов, все — Core Competency</b>.</li>
  <li>Полностью асинхронный формат: уроки открываются последовательно, живых встреч нет.</li>
- <li>На русском; английская версия — после запуска русской. Старт — <b>1 октября 2026 года</b>.</li>
+ <li>На русском; английская версия — после запуска русской. Старт — <b>1 ноября 2026 года</b>.</li>
  </ul>
  <a class="btn btn-lg" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB" target="_blank" rel="noopener">Записаться на программу</a>
- <p class="cta-note">Старт <b>1 октября 2026</b>. Тарифы — от <b>190 €</b>.</p>
+ <p class="cta-note">Старт <b>1 ноября 2026</b>. Тарифы — от <b>190 €</b>.</p>
  <div class="hero-accr">
  <img src="assets/icf_cce.png" alt="Знак ICF Continuing Coach Education" width="60" height="60">
  <span><b>Программа аккредитована ICF</b><br>Continuing Coach Education, 10 часов</span>
@@ -1001,6 +1023,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <div class="how-card"><h3>Самопроверка и итоговый тест</h3><p>20 вопросов с множественным выбором, проходной балл 80% (16 из 20), проверка автоматическая, повторные попытки разрешены.</p></div>
  <div class="how-card"><h3>Сертификат</h3><p>Выдаётся после прохождения всех десяти уроков, работы с кейсами и сдачи теста на 80% и выше — 10 часов CCE категории Core Competency.</p></div>
  </div>
+ <div class="mcs-note">
+ <p><b>Материал для менторинга.</b> Разбор сессии менти обычно идёт по записи и дословному транскрипту: реплики по ролям, таймкоды, паузы и отдельная колонка для пометок ментора. Как такой транскрипт выглядит, что в нём проверять и где бесплатно расшифровать запись в этот формат, разобрано в гайде <a href="https://iakuban.com/articles/transkribaciya-kouch-sessii/">«Транскрибация коуч-сессии»</a>.</p>
+ </div>
  </div>
 </section>
 
@@ -1080,7 +1105,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <b>Что общее для обоих тарифов:</b> доступ на платформе академии · три видео по 20 минут в уроке о компетенциях ментор-коуча · кейсы с разборами и вопросы для самопроверки · итоговый тест с автоматической проверкой и повторными попытками.<br><br>
  <b>Язык:</b> на русском; английская версия — после запуска русской.<br>
  <b>Срок доступа к материалам:</b> видео и платформа — 12 месяцев с даты покупки. Сертификат и скачиваемые чек-листы (PDF) — бессрочно.<br>
- <b>Старт:</b> 1 октября 2026 года.
+ <b>Старт:</b> 1 ноября 2026 года.
  </div>
  <p class="pricing-contact">Вопросы до оплаты — напишите нам: <a href="mailto:info@iakuban.com">info@iakuban.com</a>, <a href="tel:+34614206809">+34 614 206 809</a>.</p>
  </div>
@@ -1159,7 +1184,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <tr><th>Аккредитация</th><td>Программа аккредитована ICF как Continuing Coach Education (CCE)</td></tr>
  <tr><th>Контактные часы</th><td>10.00, все — категория Core Competency (0 часов Resource Development)</td></tr>
  <tr><th>Период действия аккредитации</th><td>сертификат выдан 01.10.2026, действует по 31.10.2027</td></tr>
- <tr><th>Старт программы</th><td>1 октября 2026 года</td></tr>
+ <tr><th>Старт программы</th><td>1 ноября 2026 года</td></tr>
  <tr><th>Формат обучения (delivery method)</th><td>полностью асинхронный, самостоятельный темп, собственная платформа академии; синхронных (живых) часов нет</td></tr>
  <tr><th>Язык</th><td>на русском; английская версия — после запуска русской</td></tr>
  <tr><th>Локация</th><td>онлайн</td></tr>
@@ -1207,7 +1232,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <div class="foot-col">
  <b>Юридическая информация</b>
  <a href="https://iakuban.com/legal/privacy-policy">Политика конфиденциальности</a><br>
- <a href="https://iakuban.com/legal/offer-agreement">Договор оферты</a><br>
+ <a href="https://iakuban.com/legal/education-offer">Оферта на обучение</a><br>
+ <a href="https://iakuban.com/legal/offer-agreement">Договор оферты на предоставление услуг платформы</a><br>
  <a href="https://iakuban.com/legal/terms-of-use">Условия использования</a><br>
  <a href="https://iakuban.com/legal/code-of-conduct">Кодекс поведения для коучей</a>
  </div>
