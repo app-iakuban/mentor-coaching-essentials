@@ -147,22 +147,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
       "url": "https://iakuban.com/mentor-coaching-essentials/"
-    },
-    {
-      "@type": "Offer",
-      "name": "Тариф «Ментор»",
-      "price": "19000",
-      "priceCurrency": "RUB",
-      "availability": "https://schema.org/InStock",
-      "url": "https://iakuban.com/mentor-coaching-essentials/"
-    },
-    {
-      "@type": "Offer",
-      "name": "Тариф «Ментор + сессия»",
-      "price": "34000",
-      "priceCurrency": "RUB",
-      "availability": "https://schema.org/InStock",
-      "url": "https://iakuban.com/mentor-coaching-essentials/"
     }
   ],
   "hasCourseInstance": {
@@ -196,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  {"@type":"Question","name":"Выдаётся ли сертификат?","acceptedAnswer":{"@type":"Answer","text":"Да. Для его получения нужно пройти все десять уроков, проработать кейсы и сдать итоговый тест на 80% и выше. В сертификате указаны 10 часов Continuing Coach Education категории Core Competency."}},
  {"@type":"Question","name":"Чем менторинг отличается от супервизии?","acceptedAnswer":{"@type":"Answer","text":"Менторинг — обратная связь о навыках относительно компетенций ICF. Супервизия — работа с самим коучем и его реакциями в практике. Разграничению посвящён урок 3."}},
  {"@type":"Question","name":"Подходит ли программа преподавателям программ коуч-образования?","acceptedAnswer":{"@type":"Answer","text":"Да, это одна из целевых аудиторий. С 1 января 2027 года менторинг внутри аккредитованных ICF программ уровня Level 1 и Level 2 проводят только менторы с MCS, поэтому faculty программ проходит тот же путь, что и частные менторы."}},
- {"@type":"Question","name":"В чём разница между тарифами?","acceptedAnswer":{"@type":"Answer","text":"«Ментор» (190 € или 19 000 ₽) даёт все 10 уроков, сертификат, доступ в закрытый клуб менторов Mentor Circle в Telegram, доступ в общий чат выпускников академии и место в базе выпускников. «Ментор + сессия» (350 € или 34 000 ₽) добавляет к этому индивидуальную часовую ориентирующую сессию с ментором уровня PCC ICF — разбор вашей ситуации и вопросов о движении в профессии."}}
+ {"@type":"Question","name":"В чём разница между тарифами?","acceptedAnswer":{"@type":"Answer","text":"«Ментор» (190 €) даёт все 10 уроков, сертификат, доступ в закрытый клуб менторов Mentor Circle в Telegram, доступ в общий чат выпускников академии и место в базе выпускников. «Ментор + сессия» (350 €) добавляет к этому индивидуальную часовую ориентирующую сессию с ментором уровня PCC ICF — разбор вашей ситуации и вопросов о движении в профессии."}}
  ]
 }
 </script>
@@ -430,8 +414,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
  border-radius:24px;padding:42px 40px 38px;display:flex;flex-direction:column}
  .price-card h3{font-family:var(--headline);font-weight:500;font-size:23px;color:#fff}
  .price-card .price{font-family:var(--headline);font-size:48px;font-weight:500;color:#fff;margin-top:16px}
- .price-card .price-rub{font-family:var(--headline);font-size:22px;font-weight:500;color:rgba(255,255,255,.8);margin-top:6px}
- .price-card .price-rub small{font-size:15px;font-family:var(--body);font-weight:400;color:rgba(255,255,255,.75);margin-left:6px;white-space:nowrap}
  .price-card .price small{font-size:16px;color:var(--ink-soft);font-family:var(--body);font-weight:400}
  .price-card ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin:24px 0 22px}
  .price-card li{position:relative;padding-left:26px;font-size:14.5px;line-height:1.5;color:var(--ink-soft)}
@@ -534,7 +516,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
  .lessons details p{padding-left:0}
  .cert-grid,.club-grid{grid-template-columns:1fr;gap:28px}
  .price-card.hl .btn-white{text-align:center}
- .price-card .price-rub small{display:block;margin:4px 0 0}
  .club-photo{order:-1}
  .l-fmt{display:inline}
  table.ci th,table.ci td{padding:14px 20px;display:block;width:auto}
@@ -883,7 +864,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <li>Курс на русском, английская версия выйдет позже. <b>Старт сразу после оплаты</b>, все уроки в записи.</li>
  </ul>
  <a class="btn btn-lg" href="https://t.me/iakuban_team?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%C2%AB%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%83%D1%87%D0%B5%D0%B9%C2%BB.%20%D0%9C%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%B4%3A%20MCE-INFO" target="_blank" rel="noopener">Записаться на программу</a>
- <p class="cta-note">Доступ открывается сразу после оплаты. Тарифы от <b>190 € / 19 000 ₽</b>.</p>
+ <p class="cta-note">Доступ открывается сразу после оплаты. Тарифы от <b>190 €</b>.</p>
  <div class="hero-accr">
  <img src="assets/icf_cce.png" alt="Знак ICF Continuing Coach Education" width="60" height="60">
  <span><b>Программа аккредитована ICF</b><br>Continuing Coach Education, 10 часов</span>
@@ -1180,8 +1161,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <div class="pricing-grid">
  <div class="price-card">
  <h3>Ментор</h3>
- <p class="price">190 €</p>
- <p class="price-rub">или 19 000 ₽ <small>за всю программу</small></p>
+ <p class="price">190 € <small>за всю программу</small></p>
  <ul>
  <li>Все 10 уроков программы, <b>10 контактных часов</b></li>
  <li>Итоговый тест и <b>сертификат о прохождении программы, аккредитованной ICF</b> (CCE, 10 часов Core Competency)</li>
@@ -1194,8 +1174,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <div class="price-card hl">
  <span class="tag">Рекомендуем</span>
  <h3>Ментор + сессия</h3>
- <p class="price">350 €</p>
- <p class="price-rub">или 34 000 ₽ <small>за всю программу</small></p>
+ <p class="price">350 € <small>за всю программу</small></p>
  <p style="font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.9);margin-top:16px">Всё из тарифа «Ментор», плюс:</p>
  <ul>
  <li><b>Ориентирующая сессия:</b> час один на один с ментором, у которого квалификация PCC ICF. Разберёте свою ситуацию, зададите любые вопросы и решите, куда двигаться в менторской практике</li>
@@ -1274,7 +1253,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  </details>
  <details>
  <summary>В чём разница между тарифами?</summary>
- <p><b>«Ментор» (190 € или 19 000 ₽)</b> даёт все 10 уроков, сертификат, доступ в закрытый клуб менторов Mentor Circle в Telegram, доступ в общий чат выпускников академии и место в базе выпускников. <b>«Ментор + сессия» (350 € или 34 000 ₽)</b> добавляет к этому индивидуальную часовую ориентирующую сессию с ментором уровня PCC ICF — разбор вашей ситуации и вопросов о движении в профессии.</p>
+ <p><b>«Ментор» (190 €)</b> даёт все 10 уроков, сертификат, доступ в закрытый клуб менторов Mentor Circle в Telegram, доступ в общий чат выпускников академии и место в базе выпускников. <b>«Ментор + сессия» (350 €)</b> добавляет к этому индивидуальную часовую ориентирующую сессию с ментором уровня PCC ICF — разбор вашей ситуации и вопросов о движении в профессии.</p>
  </details>
  </div>
  <div class="faq-more">
@@ -1306,7 +1285,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <tr><th>Пререквизиты</th><td>формальных пререквизитов нет</td></tr>
  <tr><th>Преподаватель</th><td>Ольга Вильковская (Olga Vilkovskaya), коуч PCC ICF, ведёт все 10 уроков</td></tr>
  <tr><th>Оценка</th><td>итоговый тест: 20 вопросов, проходной балл 80%, повторные попытки разрешены</td></tr>
- <tr><th>Стоимость</th><td>190 € или 19 000 ₽ (тариф «Ментор»), 350 € или 34 000 ₽ (тариф «Ментор + сессия»)</td></tr>
+ <tr><th>Стоимость</th><td>190 € (тариф «Ментор»), 350 € (тариф «Ментор + сессия»)</td></tr>
  <tr><th>Контакты</th><td><a href="mailto:info@iakuban.com" style="color:#3D3DF0">info@iakuban.com</a>, <a href="tel:+34614206809" style="color:#3D3DF0">+34 614 206 809</a></td></tr>
  <tr><th>Адрес</th><td>Avda Pau Casals 4 A, Prats de Lluçanès, Barcelona 08513, Spain</td></tr>
  <tr><th>Сайт</th><td>iakuban.com</td></tr>
