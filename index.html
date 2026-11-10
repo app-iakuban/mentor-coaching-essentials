@@ -820,13 +820,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
    Схема воронки ПК: Marketing/scenarios/pk_funnel_entry.md */
 (function(){
   var TG = 'https://t.me/iakuban_team';
+  /* Вход платформы в «Коучинг для жизни и бизнеса» (08.11.2026): кнопки ведут на
+     iakuban.com/kpzh?src=<КОД>, он сразу открывает канал потока. Чтобы атрибуция
+     не терялась, к таким ссылкам дописываем код визита (v=) и UTM первого захода,
+     /kpzh пишет их в pk_entry_clicks. Marketing/scenarios/pk_funnel_entry.md */
+  var KPZH = 'https://iakuban.com/kpzh';
 
   function get(k){ try { return sessionStorage.getItem(k); } catch(e){ return null; } }
   function set(k,v){ try { sessionStorage.setItem(k,v); } catch(e){} }
 
   // источник запоминаем на первой странице визита: дальше по сайту query теряется
-  if(/[?&](utm_|gclid|yclid|gad_|fbclid)/.test(location.search) && !get('ihLeadSrc')){
+  if(/[?&](utm_|gclid|yclid|gad_|fbclid|ref=)/.test(location.search) && !get('ihLeadSrc')){
     set('ihLeadSrc', location.search.slice(1));
+  }
+
+  /* Первое касание (09.11.2026): тот же ключ и формат, что у chat-widget.js и
+     Nuxt (lib/firstTouch.ts) — sessionStorage = вход вкладки, localStorage =
+     самый первый вход браузера. Формы лендингов шлют оба в POST /leads/landing,
+     клик в Telegram — в HEAD-пинг (ft_ref, ft_land): лид пишет через неделю,
+     а откуда он пришёл впервые, видно в access-логе рядом с кодом.
+     Канал раскладывает бэкенд (traffic_channel.py) и lead_watch.py. */
+  var FT = 'iakuban_first_touch';
+  var ftNow = JSON.stringify({referrer: String(document.referrer || '').slice(0, 500),
+    landing_url: String(location.href).slice(0, 500), at: new Date().toISOString()});
+  try { if(!sessionStorage.getItem(FT)) sessionStorage.setItem(FT, ftNow); } catch(e){}
+  try { if(!localStorage.getItem(FT)) localStorage.setItem(FT, ftNow); } catch(e){}
+  function firstTouch(){
+    var t = null;
+    try { t = JSON.parse(localStorage.getItem(FT) || 'null'); } catch(e){}
+    if(!t){ try { t = JSON.parse(sessionStorage.getItem(FT) || 'null'); } catch(e){} }
+    return t || JSON.parse(ftNow);
   }
 
   var code = get('ihLeadCode');
@@ -849,16 +872,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
         links[i].href = u.origin + u.pathname + '?text=' + encodeURIComponent(t + '\n\n' + label + code);
       }catch(e){}
     }
+    var first = new URLSearchParams(get('ihLeadSrc') || '');
+    var kp = document.querySelectorAll('a[href^="' + KPZH + '"]');
+    for(var k=0;k<kp.length;k++){
+      try{
+        var ku = new URL(kp[k].href);
+        if(ku.searchParams.get('v')) continue;
+        ku.searchParams.set('v', code);
+        first.forEach(function(val, key){
+          if(key.indexOf('utm_') === 0 && !ku.searchParams.get(key)) ku.searchParams.set(key, val);
+        });
+        kp[k].href = ku.toString();
+      }catch(e){}
+    }
   }
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', decorate);
   else decorate();
 
   document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href^="https://t.me/"]');
+    var a = e.target.closest && e.target.closest('a[href^="https://t.me/"],a[href^="' + KPZH + '"]');
     if(!a) return;
     var q = 'ihlc=' + code +
       '&src=' + encodeURIComponent(get('ihLeadSrc') || '') +
       '&ref=' + encodeURIComponent(document.referrer || '');
+    var ft = firstTouch();
+    q += '&ft_ref=' + encodeURIComponent(String(ft.referrer || '').slice(0, 200)) +
+      '&ft_land=' + encodeURIComponent(String(ft.landing_url || '').slice(0, 300)) +
+      '&ft_at=' + encodeURIComponent(String(ft.at || '').slice(0, 10));
     try { fetch(location.pathname + '?' + q, {method:'HEAD', keepalive:true, cache:'no-store'}); } catch(err){}
     try { gtag('event','tg_lead_code',{'lead_code': code, 'transport_type':'beacon'}); } catch(err){}
   }, true);
@@ -868,7 +908,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
      и тот же виджет работает и здесь, и на страницах платформы. Подключение
      живёт в шапке, потому что она уже разъезжается по всем лендингам одной
      командой и другого общего блока у статики нет. -->
-<script src="https://iakuban.com/chat-widget.js?v=20261031-1" defer></script>
+<script src="https://iakuban.com/chat-widget.js?v=20261109-1" defer></script>
 <!-- IH-HEADER:END -->
 
 <main>
