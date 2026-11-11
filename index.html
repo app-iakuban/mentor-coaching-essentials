@@ -159,7 +159,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       "@type": "Person",
       "name": "Ольга Вильковская",
       "alternateName": "Olga Vilkovskaya",
-      "jobTitle": "Коуч PCC ICF, ментор-коуч и супервизор Iakuban Coaching Academy"
+      "jobTitle": "Коуч PCC ICF, ментор-коуч со специализацией MCS и супервизор Iakuban Coaching Academy",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Mentor Coach Specialization (MCS), PCC Level",
+        "credentialCategory": "Specialization",
+        "url": "https://www.credly.com/badges/62f64971-1a7f-4f68-8a74-dd0d6cb71862",
+        "recognizedBy": {"@type": "Organization", "name": "International Coaching Federation", "url": "https://coachingfederation.org/"}
+      }
     }
   }
 }
@@ -434,6 +441,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
  .team-lead .role{font-size:14.5px;color:#3D3DF0;margin-bottom:16px}
  .team-lead p{font-size:15.5px;line-height:1.62;color:#4A4A4F;max-width:580px}
  .team-lead p b{color:#212121;font-weight:600}
+ .team-cred{display:flex;align-items:center;gap:18px;margin:0 0 20px;padding:14px 18px 14px 14px;
+ background:#F7F7F8;border:1px solid #ECECEF;border-radius:14px;max-width:580px}
+ .team-cred a:first-child{flex:0 0 88px;line-height:0}
+ .team-lead .team-cred img{width:88px;height:88px;display:block;object-fit:contain;border-radius:0;filter:none}
+ .team-lead .team-cred p{font-size:14.5px;line-height:1.5;color:#4A4A4F}
+ .team-cred p a{color:#3D3DF0}
+ @media (max-width:600px){
+ .team-cred{gap:14px;padding:12px}
+ .team-cred a:first-child{flex-basis:72px}
+ .team-lead .team-cred img{width:72px;height:72px}
+ .team-lead .team-cred p{font-size:14px}
+ }
  .team-org{margin-top:24px;font-size:14.5px;line-height:1.6;color:#4A4A4F}
  .team-org b{color:#212121}
  .team-org ul{margin-top:8px;list-style:none;padding-left:0}
@@ -956,7 +975,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  </div>
  <div class="badge">
  <span class="name">Ольга Вильковская</span>
- <span class="role">Коуч PCC ICF · ментор-коуч</span>
+ <span class="role">Коуч PCC ICF · ментор-коуч, MCS</span>
  </div>
  </div>
  </div>
@@ -1223,7 +1242,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
  <img src="assets/olga.webp" alt="Ольга Вильковская" width="300" height="320" loading="lazy" style="filter:none">
  <div>
  <h3>Ольга Вильковская</h3>
- <p class="role">Коуч PCC ICF · ментор-коуч · супервизор</p>
+ <p class="role">Коуч PCC ICF · ментор-коуч со специализацией MCS · супервизор</p>
+ <div class="team-cred">
+ <a href="https://www.credly.com/badges/62f64971-1a7f-4f68-8a74-dd0d6cb71862" target="_blank" rel="noopener"><img src="assets/olga-mcs-pcc.png" alt="Бейдж ICF Mentor Coach Specialization, уровень PCC, Ольги Вильковской" width="88" height="88" loading="lazy"></a>
+ <p><b>Mentor Coach Specialization (MCS), уровень PCC</b><br>Специализация ICF для ментор-коучей, с августа 2026 года. <a href="https://www.credly.com/badges/62f64971-1a7f-4f68-8a74-dd0d6cb71862" target="_blank" rel="noopener">Проверить бейдж</a></p>
+ </div>
  <p><b>С октября 2026 года руководит Комитетом по научному обоснованию и методологии коучинга Союза развития потенциала человека.</b> Президент Клуба коучей НИУ ВШЭ, в университетской программе «Коучинг в организации» ведёт теорию, менторит и супервизирует. Эксперт ФПКиН. В академии работает ментором и супервизором со студентами программ с аккредитацией ICF Level 1 и Level 2. Разработала методологию и написала все десять уроков этой программы, автор серии книг «Путь коуча».</p>
  <div class="team-org">
  <b>Iakuban Coaching Academy S.L.</b> — испанская компания с аккредитованными ICF программами подготовки коучей:
